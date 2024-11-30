@@ -1,0 +1,329 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --primary: #536942;
+    --secondary: #ffd936;
+    --white: #efefef;
+}
+@font-face{
+    font-family: d;
+    src: url(/font/DMSans_24pt-Black.ttf);
+}
+@font-face{
+        font-family: m;
+        src: url(/font/Forum-Regular.ttf);
+}
+
+body {
+    font-family: "DM Sans", sans-serif;
+    color: var(--primary);
+}
+
+#main {
+    background-image: url(/img/lh\ -\ Copy.jpg);
+    min-height: 70vh;
+    background-position: bottom center;
+    background-size: cover;
+}
+a {
+    text-decoration: none;
+}
+.container {
+    max-width: 1200px;
+    padding: 16px;
+    margin: auto;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-list {
+    display: flex;
+    list-style: none;
+    gap: 28px;
+    align-items: center;
+    border-radius: 8px;
+    background-color: rgba(168,213,186, 0.5);
+    box-shadow: 0  0 15px rgba(4, 249, 49, 0.8);
+}
+.nav-list a{
+    color: black;
+}
+.Logo-container {
+    
+    max-width: 200px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+.logo {
+    width: 100%;
+    max-width: 50px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+.quote{
+    width: 60%;
+    max-width: 100px;
+    height: auto;
+    display: block;
+    margin: 10 auto;
+}
+.btn{
+    padding: 12px 20px;
+    background: blue;
+    outline: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.btn-secondary {
+    border: 2px solid var(--white);
+    font-weight: bold;
+}
+.btn-secondary a{
+    color: #efefef;
+    justify-content: center;
+}
+.btn-primary  {
+    border: none;
+    background: var(--secondary);
+    color: var(--primary);
+}
+.btn-primary a {
+    color: var(--primary);
+}
+.buttn{
+     align-items: center;
+}
+.main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    color: var(--white)
+}
+.main-content  .intro-heading{
+    font-size: 50px;
+}
+.main-content  .intro-heading{
+    font-size: 110px;
+    margin-top: -20px;
+}
+.main-content  p{
+    max-width: 250px;
+    margin-bottom: 10px;
+}
+.menu-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: none;
+    width: 30px;
+}
+.section-title h1{
+    font-size: 50px;
+    text-align: center;
+}
+.section-title .line{
+    width: 150px;
+    height: 4px;
+    border: 10px;
+    background: var(--secondary);
+    margin: auto;
+}
+.services {
+    margin: 40px auto;
+    display: flex;
+    justify-content: center;
+    gap:16px;
+    flex-wrap: wrap;
+}
+.service {
+    width:350px;
+}
+.service img {
+    max-width: 100%;
+    border-radius: 5px;
+    transition: transform 0.3 ease;
+}
+.service img:hover {
+    transform: scale(1.05);  
+}
+#testimonial {
+    background: #f1f2fa;
+}
+#testimonial .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 600px;
+    gap: 30px;
+    padding: 50px 16px;
+}
+#testimonial h1 {
+    font-size: 30px;
+    font-family: m, sans-serif;
+}
+#testimonial .profile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 600px;
+    gap: 30px;
+    padding: 50px 16px;
+}
+#about-us .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 120px;
+}
+#about-us .container .about-content{
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: start;
+}
+#about-us .container .about-content h1{
+    font-family: m, sans-serif;
+    font-size: 30px;
+}
+#questions {
+    min-height: 500px;
+    background-image: url(/Products/bgfood_waifu2x_photo_noise2_scale.png);
+    background-position: bottom center;
+    background-size: cover;
+    font-family: d;
+    
+}
+#questions .container{
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+    text-align: center;
+}
+#questions h1 {
+    font-size: 45px;
+}
+footer {
+    margin-top: -60px;
+}
+footer .container {
+    display: flex;
+    padding: 20px 16px;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer-links{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    list-style: none;
+}
+.footerLogo {
+    width: 100%;
+    max-width: 100px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+.about-image {
+    max-width: 50%;
+    height: auto;
+}
+.food-container {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 80%;
+    max-width: 600px;
+    text-align: center;
+     
+  }
+  
+  /* Image styling */
+  .food-image {
+    width: 100%;
+    height: auto;
+    border-bottom: 4px solid #f0f0f0;
+    transition: transform 0.3s ease;
+  }
+  
+  .food-image:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Food description styling */
+  .food-description {
+    padding: 20px;
+  }
+  
+  .food-description h2 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .food-description p {
+    color: #555;
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
+  .transparent-bg {
+    font-size: 2rem;
+    padding: 10px;
+}
+.sec1  {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+@media  screen and (max-width:520px){
+    .menu-btn{
+        display: block;
+    }
+    .nav-list{
+        flex-direction: column;
+        background: gray;
+        position: absolute;
+        top: 0;
+        right:100 px;
+        width: 80%;
+        height: -100vh;
+        padding-top: 80px;
+        transition: all 0.3s  ease;
+    }
+    .nav-list.active{
+        right: 0;
+    }
+    #about-us .container {
+        flex-direction: column;
+        gap: 30px;
+    }
+    footer .container {
+        flex-direction: column;
+        gap: 16px;
+    }
+    .nav-list li:not(:last-child) {
+        text-align: left;
+        width: 100%;
+        padding: 10px 30px;
+        border-bottom: 1px  solid var(--white);
+    }  
+}
+
+

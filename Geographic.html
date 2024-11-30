@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Our Location</title>
+</head>
+<body>
+    <div id="main">
+        <div class="container">
+            <nav>
+                <div>
+                <img src="/img/Burgos_ilocos_norte_seal_logo.png" alt="" class="Logo-container">
+                </div>
+                <ul class="nav-list">
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="Food.html">Food/Products</a></li>
+                    <li><a href="Festivals.html">Festivals</a></li>
+                    <li><a href="/Geographic.html">Geographic/Location</a></li>
+                    <li><button class="btn btn-secondary"><a href="https://www.facebook.com/BurgosIlocosNorte/">Facebook</a></button></li>
+                    <img src="/btn/icons8-menu-button-144.svg" alt="" class="menu-btn">
+                </ul>
+                
+            </nav>
+            <div class="main-content">
+                <h1 class="main-heading">welcome to</h1>
+                <h1 class="intro-heading">Burgos</h1>
+                <br>
+                <p>
+                    Look  deep into Ilocos Norte, and you will understand everything better about Burgos,Ilocos Norte.
+                </p>
+                <button class="btn btn-primary"><a href="#">Location</a></button>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="geo-container">
+        <div class="box">Our Location</div>
+        <p>
+            Burgos is bounded to the north by South China Sea; Bangui in the east and in the south, Pasuquin and Vintar. It has a total land area of 49.77 square miles (128.9 km2). It is situated in the north coast of Ilocos Norte. Burgos has the largest wind farm in the Philippines. Burgos is 536 kilometers (333 mi) from Metro Manila and 49 kilometers (30 mi) from Laoag City, the provincial capital.
+        </p>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d121102.29691255059!2d120.560953544026!3d18.463411050074626!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3389316a80d4c545%3A0xfc64d9081bfce9fc!2sBurgos%2C%20Ilocos%20Norte!5e0!3m2!1sen!2sph!4v1732959345238!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    
+   </section>
+
+   <footer>
+    <div class="container">
+        <ul class="footer-links">
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/Food.html">Food</a></li>
+            <li><a href="/Festivals.html">Festivals</a></li>
+            <li><a href="/Geographic.html">Geographic/Location</a></li>
+        </ul>
+        <img src="/img/Burgos_ilocos_norte_seal_logo.png" alt="" class="footerLogo">
+        <p>Love Burgosenyo by Fellow Visitor</p>
+    </div>
+</footer>
+
+<script>
+    const navBtn = document.querySelector('.menu-btn')
+    const navList = document.querySelector('.nav-list')
+
+    navBtn.addEventListener('click',function(){
+        navList.classList.toggle('active');
+    })
+</script>
+</body>
+</html>
